@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:18:07 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:09:06 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/17 12:56:12 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	new_c = (unsigned char)c;
-	while (s[i] != '\0')
+	while ((unsigned char)s[i] != '\0')
 	{
-		if (s[i] == new_c)
+		if ((unsigned char)s[i] == new_c)
 			return ((char *)&s[i]);
 		i++;
 	}
@@ -36,21 +36,20 @@ int	main(void)
 {
 	char	str[] = "42Porto";
 
+	printf("find the first occurrence of a char in a string:\n\n");
+
 	// expected output: Porto
-	printf("finding the first occurrence of P: %s\n", ft_strchr(str, 'P'));
+	printf("searching for P: %s\n", ft_strchr(str, 'P'));
 
 	// expected output: 42Porto
-	printf("finding the first occurrence of 4: %s\n", ft_strchr(str, '4'));
+	printf("searching for 4: %s\n", ft_strchr(str, '4'));
 
-	// expected output: o
-	printf("finding the first occurrence of o: %s\n", ft_strchr(str, 'o'));
+	// expected output: orto
+	printf("searching for o: %s\n", ft_strchr(str, 'o'));
 
-	// expected output: (null)
-	printf("searching for a character that does not exist: %s\n",
-		ft_strchr(str, 'x'));
-
-	// expected output: 
-	printf("finding the null terminator: %s\n", ft_strchr(str, '\0'));
+	// expected output: empty string
+	printf("searching for the null terminator: %s\n",
+		ft_strchr(str, '\0'));
 
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:28:43 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/05 15:35:18 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/11 23:19:11 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int	ft_isalpha(int c)
 
 int	main(void)
 {
+	printf("check if the input is an alphabetic letter:\n\n");
+
 	// expected output: 1
 	printf("checking uppercase letter A: %d\n", ft_isalpha('A'));
 
@@ -30,7 +32,7 @@ int	main(void)
 	printf("checking lowercase letter z: %d\n", ft_isalpha('z'));
 
 	// expected output: 0
-	printf("checking digit 5: %d\n", ft_isalpha('5'));
+	printf("checking number 5: %d\n", ft_isalpha('5'));
 
 	// expected output: 0
 	printf("checking symbol @: %d\n", ft_isalpha('@'));

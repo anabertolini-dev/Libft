@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:18:07 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:11:13 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:50:41 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = ft_strlen(s);
 	new_c = (unsigned char)c;
-	while (i > 0)
+	while (1)
 	{
-		if (s[i] == new_c)
+		if ((unsigned char)s[i] == new_c)
 			return ((char *)&s[i]);
+		if (i == 0)
+			break ;
 		i--;
 	}
 	return (NULL);
@@ -34,21 +36,20 @@ int	main(void)
 {
 	char	str[] = "42Porto";
 
+	printf("find the last occurrence of a character in a string:\n\n");
+
 	// expected output: Porto
-	printf("finding the first occurrence of P: %s\n", ft_strrchr(str, 'P'));
+	printf("searching for P: %s\n", ft_strrchr(str, 'P'));
 
 	// expected output: 42Porto
-	printf("finding the first occurrence of 4: %s\n", ft_strrchr(str, '4'));
+	printf("searching for 4: %s\n", ft_strrchr(str, '4'));
 
 	// expected output: o
-	printf("finding the first occurrence of o: %s\n", ft_strrchr(str, 'o'));
+	printf("searching for o: %s\n", ft_strrchr(str, 'o'));
 
-	// expected output: (null)
-	printf("searching for a character that does not exist: %s\n",
-		ft_strrchr(str, 'x'));
-
-	// expected output: 
-	printf("finding the null terminator: %s\n", ft_strrchr(str, '\0'));
+	// expected output: empty string
+	printf("searching for the null terminator: %s\n",
+		ft_strrchr(str, '\0'));
 
 	return (0);
 }

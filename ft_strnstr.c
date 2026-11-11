@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 20:09:58 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:25:34 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 16:16:48 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	if (little[0] == '\0')
 		return ((char *)big);
-	while (big[i] && i < len)
+	while (i < len && big[i] != '\0')
 	{
 		j = 0;
-		while (little[j] != '\0' && big[i + j] == little[j] && ((i + j) < len))
+		while (i + j < len && little[j] != '\0'
+			&& big[i + j] == little[j])
 			j++;
 		if (little[j] == '\0')
 			return ((char *)&big[i]);
@@ -36,7 +37,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 int	main(void)
 {
-	// expected output: world
+	printf("find a substring within a limited number of characters:\n\n");
+
+	// expected output: word
 	printf("locate (wor): %s\n", ft_strnstr("hello word", "wor", 15));
 
     // expected output: porto
@@ -44,6 +47,15 @@ int	main(void)
 
     // expected output: ana
 	printf("locate (ana):%s\n", ft_strnstr("mariana", "ana", 15));
+
+	// expected output: (null)
+	printf("substring outside limit: %s\n",
+		ft_strnstr("42Porto", "Porto", 4));
+
+	// expected output: 42Porto
+	printf("empty substring: %s\n",
+		ft_strnstr("42Porto", "", 0));
+
 	return (0);
 }
 */

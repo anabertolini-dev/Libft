@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:18:07 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:11:22 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:40:25 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,22 @@ int	ft_tolower(int c)
 
 int	main(void)
 {
+	printf("convert uppercase letters to lowercase:\n\n");
+
 	// expected output: a
-	printf("converting uppercase letter (A): %c\n", ft_tolower('A'));
+	printf("converting a: %c\n", ft_tolower('A'));
 
 	// expected output: z
-	printf("converting uppercase letter (Z): %c\n", ft_tolower('Z'));
+	printf("converting z: %c\n", ft_tolower('Z'));
 
 	// expected output: 4
-	printf("checking digit (4): %c\n", ft_tolower('4'));
+	printf("checking digit 4: %c\n", ft_tolower('4'));
+
+	// expected output: !
+	printf("checking special character: %c\n", ft_tolower('!'));
+
+	// expected output: b
+	printf("checking lowercase letter b: %c\n", ft_tolower('b'));
 
 	return (0);
 }

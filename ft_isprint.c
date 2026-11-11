@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:36:35 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/05 15:47:10 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/11 23:23:11 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int	ft_isprint(int c)
 
 int	main(void)
 {
+	printf("check if the input is a printable ascii char:\n\n");
+
 	// expected output: 1
 	printf("checking printable letter A: %d\n", ft_isprint('A'));
 

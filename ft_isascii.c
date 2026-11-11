@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:35:06 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/05 15:42:32 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/11 23:22:26 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,10 @@ int	ft_isascii(int c)
 
 int	main(void)
 {
+	printf("check if the input is a valid ascii character:\n\n");
+
 	// expected output: 1
-	printf("checking ascii value 65 (A): %d\n", ft_isascii(65));
+	printf("checking ascii value 65 (a): %d\n", ft_isascii(65));
 
 	// expected output: 1
 	printf("checking ascii value 0: %d\n", ft_isascii(0));

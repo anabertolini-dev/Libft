@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 19:50:37 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:10:39 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:52:12 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,14 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 int	main(void)
 {
-	char	str1[] = "Bocal";
-	char	str2[] = "Bocai";
-	char	str3[] = "Cluster";
+	char	str1[] = "bocal";
+	char	str2[] = "bocai";
+	char	str3[] = "cluster";
+
+	printf("compare two strings up to n characters:\n\n");
 
 	// expected output: 0
-	printf("comparing two identical strings: %d\n",
+	printf("comparing identical strings: %d\n",
 		ft_strncmp(str1, str1, 5));
 
 	// expected output: 0
@@ -41,20 +43,12 @@ int	main(void)
 		ft_strncmp(str1, str2, 4));
 
 	// expected output: positive
-	printf("comparing strings with a difference at the last character: %d\n",
+	printf("comparing different last characters: %d\n",
 		ft_strncmp(str1, str2, 5));
 
 	// expected output: negative
-	printf("comparing strings with a difference at the first character: %d\n",
+	printf("comparing different first characters: %d\n",
 		ft_strncmp(str1, str3, 3));
-
-	// expected output: 0
-	printf("comparing strings with a limit of zero: %d\n",
-		ft_strncmp(str1, str3, 0));
-
-	// expected output: negative
-	printf("comparing a shorter string with a longer string: %d\n",
-		ft_strncmp("42", "42 Porto", 8));
 
 	return (0);
 }

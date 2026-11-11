@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 20:09:58 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:09:15 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 11:19:31 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	char	*dest;
-	int		len;
-	int		i;
+	size_t	len;
+	size_t	i;
 
 	len = ft_strlen(src);
 	dest = malloc(len + 1);
-	if (dest == 0)
-		return (0);
+	if (dest == NULL)
+		return (NULL);
 	i = 0;
 	while (src[i] != '\0')
 	{
@@ -32,23 +32,24 @@ char	*ft_strdup(char *src)
 	return (dest);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	char	*src;
+	char	*dest;
 
 	// expected output: ana-cmar
-	src = ft_strdup("ana-cmar");
-	printf("duplicate the string (ana-cmar): %s\n", src);
+	dest = ft_strdup("ana-cmar");
+	printf("duplicate the string (ana-cmar): %s\n", dest);
+	free(dest);
 
-    // expected output: milestone
-	src = ft_strdup("milestone");
-	printf("duplicate the string (milestone): %s\n", src);
+	// expected output: milestone
+	dest = ft_strdup("milestone");
+	printf("duplicate the string (milestone): %s\n", dest);
+	free(dest);
 
-    // expected output: libft
-    src = ft_strdup("libft");
-	printf("duplicate the string (libft): %s\n", src);
+	// expected output: libft
+	dest = ft_strdup("libft");
+	printf("duplicate the string (libft): %s\n", dest);
+	free(dest);
 
 	return (0);
 }

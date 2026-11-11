@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:40:01 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:08:54 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/11 23:25:33 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ void	*ft_memset(void *s, int c, size_t n)
 
 int	main(void)
 {
+	printf("fill a specified number of bytes with a given char:\n\n");
+
 	char	str1[10] = "ana-camar";
 	char	str2[10] = "42Porto";
 

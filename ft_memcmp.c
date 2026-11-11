@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 19:55:37 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:07:17 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:59:21 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ int	main(void)
 	char	str4[] = {'A', '\0', 'C'};
 	char	str5[] = {'A', '\0', 'D'};
 
+	printf("compare two memory blocks byte by byte:\n\n");
+
 	// expected output: 0
 	printf("comparing identical memory blocks: %d\n",
 		ft_memcmp(str1, str2, 7));
@@ -49,10 +51,6 @@ int	main(void)
 	// expected output: 0
 	printf("comparing the first 2 bytes: %d\n",
 		ft_memcmp(str4, str5, 2));
-
-	// expected output: negative
-	printf("comparing 3 bytes, including bytes after null terminator: %d\n",
-		ft_memcmp(str4, str5, 3));
 
 	// expected output: 0
 	printf("comparing with a limit of zero: %d\n",

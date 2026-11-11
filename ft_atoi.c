@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoir.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 17:18:07 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/05 17:23:40 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 11:10:14 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;
@@ -43,6 +43,8 @@ int	ft_atoi(char *str)
 
 int	main(void)
 {
+	printf("convert a string into an integer:\n\n");
+
 	// expected output: -456
 	printf("conversion of \"-456\": %d\n", ft_atoi("-456"));
 

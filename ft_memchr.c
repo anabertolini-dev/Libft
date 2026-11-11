@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ana-cmar <ana-cmar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 19:55:37 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/07 16:11:35 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:58:21 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,22 +36,24 @@ int	main(void)
 {
 	char	str[] = "42Porto";
 
+	printf("find the first occurrence of a byte in memory:\n\n");
+
 	// expected output: Porto
-	printf("finding the first occurrence of P: %s\n",
+	printf("searching for P: %s\n",
 		(char *)ft_memchr(str, 'P', 7));
 
 	// expected output: orto
-	printf("finding the first occurrence of o: %s\n",
+	printf("searching for o: %s\n",
 		(char *)ft_memchr(str, 'o', 7));
 
 	// expected output: (null)
-	printf("searching for a character that does not exist: %s\n",
+	printf("searching for a missing character: %s\n",
 		(char *)ft_memchr(str, 'x', 7));
 
 	// expected output: (null)
 	printf("searching with a limit of zero: %s\n",
 		(char *)ft_memchr(str, '4', 0));
 
-	return (0);
+		return (0);
 }
 */
