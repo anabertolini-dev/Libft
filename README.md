@@ -4,14 +4,13 @@
 <div align="center">
 <!-- PROJECT TITLE -->
 <p align="center">
-  <img src="https://i.imgur.com/f5ADmLT.png#gh-dark-mode-only" width="700" alt="Libft">
+  <img src="https://i.imgur.com/f5ADmLT.png" width="700" alt="Libft">
 </p>
 </div>
-<br> <br> <br>
+<br> <br>
 <!-- DESCRIPTION -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/IfDbu99.png">
-  <img src="https://i.imgur.com/4vokhZr.png" alt="Description" width="250">
+  <img src="https://i.imgur.com/IfDbu99.png" alt="Description" width="250">
 </picture>
 <br> <br>
 
@@ -28,11 +27,7 @@ The goal of Libft is not simply to recreate existing functions, but to understan
 <!-- LIBRARY OVERVIEW -->
 <div align="center">
 	<picture>
-	<source
-		media="(prefers-color-scheme: dark)"
-		srcset="https://i.imgur.com/1ARjY6t.png">
-	<img
-		src="https://i.imgur.com/jN9omzX.png"
+	<img src="https://i.imgur.com/1ARjY6t.png"
 		alt="Library Overview"
 		width="200"
 		align="left">
@@ -48,8 +43,7 @@ The library is organized into three sections, each bringing together functions w
   <tr>
     <td align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/t7obhIU.png">
-        <img src="https://i.imgur.com/olEaGsw.png" alt="01" width="100">
+        <img src="https://i.imgur.com/t7obhIU.png" alt="01" width="100">
       </picture>
     </td>
     <td valign="middle">
@@ -88,8 +82,7 @@ The library is organized into three sections, each bringing together functions w
   <tr>
     <td align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/i1xUHWl.png">
-        <img src="https://i.imgur.com/Qp6VPS6.png" alt="02" width="100">
+        <img src="https://i.imgur.com/i1xUHWl.png" alt="02" width="100">
       </picture>
     </td>
     <td valign="middle">
@@ -120,8 +113,7 @@ The library is organized into three sections, each bringing together functions w
   <tr>
     <td align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/3NAGkG1.png">
-        <img src="https://i.imgur.com/lqjfZKT.png" alt="03" width="100">
+        <img src="https://i.imgur.com/3NAGkG1.png" alt="03" width="100">
       </picture>
     </td>
     <td valign="middle">
@@ -144,10 +136,9 @@ The library is organized into three sections, each bringing together functions w
 | `ft_lstiter` | Applies a function to each node |
 | `ft_lstmap` | Creates a new list by applying a function to each node |
 
-<br><br>
+<br>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/Fu6odvY.png">
-  <img src="https://imgur.com/JUXCrx6.png" alt="Description" width="250">
+  <img src="https://imgur.com/Fu6odvY.png" alt="Instruction" width="240">
 </picture>
 
 To get started with the library, follow these simple steps.
@@ -177,8 +168,7 @@ cc -Wall -Wextra -Werror main.c libft.a
 ```
 <br><br>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/lu5ZkQc.png">
-  <img src="https://imgur.com/SLgKBwN.png" alt="Description" width="250">
+  <img src="https://imgur.com/lu5ZkQc.png" alt="Makefile" width="220">
 </picture>
 
 | Command | Description |
@@ -188,10 +178,9 @@ cc -Wall -Wextra -Werror main.c libft.a
 | `make fclean` | Removes object files and the library |
 | `make re` | Recompiles the library from scratch |
 
-<br><br>
+<br>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/NydW4mR.png">
-  <img src="https://imgur.com/RSY4mBR.png" alt="Description" width="250">
+  <img src="https://imgur.com/NydW4mR.png" alt="Resources" width="220">
 </picture>
 
 Throughout this project, several resources were used to understand C programming concepts and guide the implementation of the library.
@@ -216,7 +205,6 @@ These visual explanations helped me build a clearer mental model of how things w
 <br><br>
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/xlcFSmY.png">
-  <img src="https://imgur.com/tHJulUt.png" alt="Description" width="400">
+  <img src="https://imgur.com/xlcFSmY.png" alt="ALways" width="400">
 </picture>
 </div>
