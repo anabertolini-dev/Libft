@@ -1,14 +1,11 @@
 *This project has been created as part of the 42 curriculum by ana-cmar.*
 
-<!-- PROJECT TITLE -->
 <div align="center">
-<!-- PROJECT TITLE -->
 <p align="center">
   <img src="https://i.imgur.com/f5ADmLT.png" width="700" alt="Libft">
 </p>
 </div>
 <br> <br>
-<!-- DESCRIPTION -->
 <picture>
   <img src="https://i.imgur.com/IfDbu99.png" alt="Description" width="250">
 </picture>
@@ -24,7 +21,6 @@ The goal of Libft is not simply to recreate existing functions, but to understan
 
 **Every function is a small piece of knowledge. Every piece adds to the library.**
 
-<!-- LIBRARY OVERVIEW -->
 <div align="center">
 	<picture>
 	<img src="https://i.imgur.com/1ARjY6t.png"
@@ -38,7 +34,6 @@ The library is organized into three sections, each bringing together functions w
 <br>
 <br>
 
-<!-- 01. LIBC REIMPLEMENTATIONS -->
 <table>
   <tr>
     <td align="center" valign="middle">
@@ -77,7 +72,6 @@ The library is organized into three sections, each bringing together functions w
 | `ft_atoi` | Converts a string to an integer |
 
 <br>
-<!-- 02. ADDITIONAL LIBRARY FUNCTIONS -->
 <table>
   <tr>
     <td align="center" valign="middle">
@@ -108,7 +102,6 @@ The library is organized into three sections, each bringing together functions w
 | `ft_putnbr_fd` | Writes an integer to a file descriptor |
 
 <br>
-<!-- 03. LINKED LIST FUNCTIONS -->
 <table>
   <tr>
     <td align="center" valign="middle">
@@ -140,19 +133,19 @@ The library is organized into three sections, each bringing together functions w
 <picture>
   <img src="https://imgur.com/Fu6odvY.png" alt="Instruction" width="240">
 </picture>
-
+<br> <br>
 To get started with the library, follow these simple steps.
 
 <br>
 
-**Clone the repository and navigate to its directory:**
+**- Clone the repository and navigate to its directory:**
 
 ```bash
 git clone git@vogsphere.42porto.com:vogsphere/intra-uuid-0300990d-cd25-4dea-91b3-e739cea02da9-7785368-ana-cmar Libft
 cd libft
 ```
 
-**Compile the library:**
+**- Compile the library:**
 
 ```bash
 make
@@ -160,7 +153,7 @@ make
 
 This generates the static library `libft.a`.
 
-**Compile it with the library:**
+**- Compile it with the library:**
 
 ```bash
 cc -Wall -Wextra -Werror main.c libft.a
