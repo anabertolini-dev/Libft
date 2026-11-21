@@ -6,7 +6,7 @@
 /*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 23:09:37 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/12 11:18:04 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/21 14:13:25 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*pointer;
 
-	if (size != 0 && nmemb > SIZE_MAX / size)
+	if (nmemb == 0 || size == 0)
+		return (malloc(1));
+	if (nmemb > SIZE_MAX / size)
 		return (NULL);
 	pointer = malloc(nmemb * size);
 	if (pointer == NULL)

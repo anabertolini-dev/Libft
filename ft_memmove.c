@@ -6,7 +6,7 @@
 /*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 17:47:01 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/12 10:30:56 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/21 13:51:14 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	source = (const unsigned char *)src;
 	if (dst > source)
 	{
-		while (n--)
-			dst[n] = source[n];
-	}
-	else
-	{
-		i = 0;
-		while (i < n)
+		i = n;
+		while (i > 0)
 		{
+			i--;
 			dst[i] = source[i];
-			i++;
 		}
 	}
+	else
+		ft_memcpy(dest, src, n);
 	return (dest);
 }
 /*

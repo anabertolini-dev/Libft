@@ -6,7 +6,7 @@
 /*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 17:38:21 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/12 10:26:33 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/19 14:52:18 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	destination = (unsigned char *)dest;
 	source = (const unsigned char *)src;
+	if (!dest && !src)
+		return (dest);
 	while (i < n)
 	{
 		destination[i] = source[i];

@@ -6,7 +6,7 @@
 /*   By: ana-cmar <ana-cmar@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:18:07 by ana-cmar          #+#    #+#             */
-/*   Updated: 2026/11/12 10:50:41 by ana-cmar         ###   ########.fr       */
+/*   Updated: 2026/11/21 13:52:01 by ana-cmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = ft_strlen(s);
 	new_c = (unsigned char)c;
-	while (1)
+	while (i > 0)
 	{
 		if ((unsigned char)s[i] == new_c)
 			return ((char *)&s[i]);
-		if (i == 0)
-			break ;
 		i--;
 	}
+	if ((unsigned char)s[0] == new_c)
+		return ((char *)&s[0]);
 	return (NULL);
 }
 /*
