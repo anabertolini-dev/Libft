@@ -1,5 +1,3 @@
-*This project has been created as part of the 42 curriculum by ana-cmar.*
-
 <div align="center">
 <p align="center">
   <img src="https://i.imgur.com/f5ADmLT.png" width="700" alt="Libft">
@@ -141,7 +139,7 @@ To get started with the library, follow these simple steps.
 **- Clone the repository and navigate to its directory:**
 
 ```bash
-git clone git@vogsphere.42porto.com:vogsphere/intra-uuid-0300990d-cd25-4dea-91b3-e739cea02da9-7785368-ana-cmar Libft
+git clone git@github.com:anabertolini-dev/Libft.git
 cd libft
 ```
 
@@ -183,17 +181,6 @@ Throughout this project, several resources were used to understand C programming
 - **Peers:** Discussions and knowledge sharing with fellow students helped clarify concepts and explore different approaches to problems.
 
 <br>
-
-AI tools were occasionally used as a visual learning aid. I find it easier to understand and retain concepts when I can see how they work, so I used AI to create visual explanations and examples of concepts that were initially difficult to grasp.
-
-This was particularly helpful when learning about:
-
-- **Pointers:** Visualizing memory addresses, references and how pointers interact with variables.
-- **Memory management:** Understanding dynamic allocation, deallocation (`malloc` and `free`) and how memory is organized.
-- **Type conversions:** Clarifying casts and how data types interact.
-- **Linked Lists:** Visualizing nodes, pointers, connections between elements and how list operations affect the structure.
-
-These visual explanations helped me build a clearer mental model of how things work internally, making it easier to understand, implement and debug the functions independently.
 
 <br><br>
 <div align="center">
